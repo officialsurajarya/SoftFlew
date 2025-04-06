@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    width: 500px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.header .logo {
+    width: 120px;
+}
+
+.logo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.header .like-msg i{
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.story-container {
+    overflow-x: auto;              
+    height: 120px;
+    display: flex;
+    flex-wrap: nowrap;            
+    scrollbar-width: none;
+    margin-bottom: 20px;          
+}
+
+.story-container::-webkit-scrollbar {
+    display: none;                
+}
+
+.story-container .story {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 110px;               
+    margin-left: 10px;
+}
+
+.story-container .bg {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(30deg, #6228d7, #ee2a7b, #f9ce34);
+    width: 100px;
+    height: 100px;
+}
+
+.story-container .logo {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 93px;
+    height: 93px;
+    text-align: left;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.story .uname {
+    text-align: center;
+    z-index: 5;
+}
+
+.story .plus {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    overflow: visible;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+
+.post {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 , inset 0 0 5px black;
+    padding: 20px 20px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-header .post-info {
+    display: flex;
+    align-items: center;
+}
+
+.post-header .title-top {
+    display: flex;
+    align-items: center;
+}
+
+.post-header .follow {
+    font-weight: 600;
+    color: rgb(0, 132, 255);
+    cursor: pointer;
+}
+
+.post .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post .logo .bg {
+    width: 60px;
+    height: 60px;
+    background-image: linear-gradient(30deg, #6228d7, #ee2a7b, #f9ce34);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post .logo img {
+    width: 90%;
+    height: 90%;
+    border: 1px solid white;
+}
+
+.post-header i {
+    font-size: 25px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+
+
+.post-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    border: 2px solid white;
+}
+
+img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.post-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+.footer-btn {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.like-comment-share i {
+    margin-right: 10px;
+}
+
+.likes-count {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.icon i {
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.post-header .title {
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.title-top p {
+    margin-left: 5px;
+}
+
+.post .comment {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.comment input {
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: auto;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-top: 2px solid #ccc;
+
+}
+
+.footer .icon {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
