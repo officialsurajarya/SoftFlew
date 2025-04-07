@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    gap: 10px;
+    background-color: black;
+}
+
+.btn1, .btn2 {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #00dbde, #fc00fc);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn2 {
+    background: linear-gradient(45deg, #1eff00, #00a2ff) !important;
+}
+
+.btn1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    border-width: 0px;
+    border: solid;
+    border-color: #000 rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) #000;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+    border-bottom-right-radius: 5px;
+    transition: .4s ease-out;
+}
+
+.btn2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 0px;
+    border: solid;
+    border-color: #000 rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) #000;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+    border-bottom-right-radius: 5px;
+    transition: 0.4s ease-out;
+}
+
+
+.btn2:hover::before {
+    border-width: 10px;
+}
+
+
+.btn1:hover::before {
+    border-width: 14px;
+}
+
+div {
+    width: 50px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 25px solid ;
+    border-color: black black yellow black;
+}
+
+div::before {
+    
+}
