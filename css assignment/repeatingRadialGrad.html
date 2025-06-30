@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .scan {
+            width: 400px;
+            height: 400px;
+            background: repeating-conic-gradient(white, rgba(0, 0, 255, 0.7));
+            border-radius: 50%;
+            /* border: 2px solid blue; */
+            animation: rotate 1.5s infinite linear;
+        }
+
+        .container {}
+
+        .img {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="img.jpg" alt="" width="40px" class="img1">
+            <img src="img.jpg" alt="" width="40px" class="img2">
+            <img src="img.jpg" alt="" width="40px" class="img3">
+            <img src="img.jpg" alt="" width="40px" class="img4">
+        </div>
+        <div class="scan">
+        </div>
+    </div>
+</body>
+
+</html>

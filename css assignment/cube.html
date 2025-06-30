@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube 3d</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .container {
+            height: 200px;
+            width: 200px;
+            perspective: 1000px;
+        }
+
+        .cube {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            position: relative;
+            animation: spin 4s infinite linear;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+
+            to {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+        .cube .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 36px;
+            background: radial-gradient(rgba(0, 255, 255, 0.7), rgba(0, 50, 255, 0.8));
+            /* background-color: rgba(0, 255, 255, 0.2); */
+        }
+
+        .cube .front {
+            transform: rotateX(0deg) translateZ(100px);
+        }
+
+        .cube .back {
+            transform: rotateX(180deg) translateZ(100px);
+        }
+
+        .cube .left {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .cube .right {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .cube .top {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .cube .bottom {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cube">
+            <div class="face front">Front</div>
+            <div class="face back">Back</div>
+            <div class="face left">Left</div>
+            <div class="face right">Right</div>
+            <div class="face top">Top</div>
+            <div class="face bottom">Bottom</div>
+        </div>
+    </div>
+</body>
+
+</html>

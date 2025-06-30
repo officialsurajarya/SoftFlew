@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 95vh;
+        }
+
+        .outer-box {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            border: 3px solid black;
+        }
+
+        .circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .cir1 {
+            top: 0;
+            left: 0;
+            animation-name: cir1;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite;
+            background-color: red;
+        }
+
+        @keyframes cir1 {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            50% {
+                top: 230px;
+                left: 230px;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cir2 {
+            right: 0;
+            top: 0;
+            animation-name: cir2;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite;
+            background-color: green;
+        }
+
+        @keyframes cir2 {
+            0% {
+                top: 0;
+                right: 0;
+            }
+
+            50% {
+                top: 230px;
+                right: 230px;
+            }
+
+            100% {
+                top: 0;
+                right: 0;
+            }
+        }
+
+        .cir3 {
+            right: 0;
+            bottom: 0;
+            animation-name: cir3;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite;
+            background-color: blue;
+        }
+
+        @keyframes cir3 {
+            0% {
+                bottom: 0;
+                right: 0;
+            }
+
+            50% {
+                bottom: 230px;
+                right: 230px;
+            }
+
+            100% {
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        .cir4 {
+            background-color: yellow;
+            left: 0;
+            bottom: 0;
+            animation-name: cir4;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes cir4 {
+            0% {
+                bottom: 0;
+                left: 0;
+            }
+
+            50% {
+                bottom: 230px;
+                left: 230px;
+            }
+
+            100% {
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        .container {
+            width: 600px;
+            height: 600px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: boxs;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes boxs {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: red;
+            }
+
+            25% {
+                left: 500px;
+                top: 0;
+                background-color: green;
+            }
+
+            50% {
+                left: 500px;
+                top: 500px;
+                background-color: blue;
+            }
+
+            75% {
+                left: 0;
+                top: 500px;
+                background-color: yellow;
+            }
+
+            100% {
+                left: 0;
+                top: 0;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-box">
+        <div class="cir1 circle"></div>
+        <div class="cir2 circle"></div>
+        <div class="cir3 circle"></div>
+        <div class="cir4 circle"></div>
+    </div>
+    <div class="container">
+        <div class="div"></div>
+    </div>
+</body>
+
+</html>

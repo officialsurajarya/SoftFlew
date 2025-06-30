@@ -9,91 +9,97 @@
 
     <style>
         * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-.main{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background-color: black;
-}
+        .main {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            background-color: black;
+        }
 
-.bg{
-    border-radius: 10px;
-    width: 700px;
-    height: 400px;
-    background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
-}
+        .bg {
+            border-radius: 10px;
+            width: 700px;
+            height: 400px;
+            background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+        }
 
-.blur {
-    background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
-    width: 680px;
-    height: 380px;
-    filter: blur(60px);
-}
+        .blur {
+            background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+            width: 680px;
+            height: 380px;
+            filter: blur(60px);
+        }
 
-.border {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    width: 680px;
-    height: 380px;
-    border-radius: 15px;
-}
+        .border {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            width: 680px;
+            height: 380px;
+            border-radius: 15px;
+        }
 
-.box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    border-radius: 15px;
-    background-color: transparent;
-    width: 700px;
-    height: 400px;
-    padding: 30px;
-    text-align: center;
-}
+        .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            border-radius: 15px;
+            background-color: transparent;
+            width: 700px;
+            height: 400px;
+            padding: 30px;
+            text-align: center;
+        }
 
-.box .content {
-    margin: 20px;
-}
+        .box .content {
+            margin: 20px;
+        }
 
-.box h1 {
-    font-size: 50px;
-    color: aliceblue;
-}
+        .box h1 {
+            font-size: 50px;
+            color: aliceblue;
+        }
 
-.box p {
-    margin-top: 20px;
-    font-size: 30px;
-    color: white;
-}
+        .box p {
+            margin-top: 20px;
+            font-size: 30px;
+            color: white;
+        }
 
-.box img {
-    width: 50%;
-    border-radius: 50%;
-}
+        .box img {
+            width: 50%;
+            border-radius: 50%;
+            transition: 0.2s;
+        }
 
+        .box img:hover {
+            box-shadow: 0 0 10px aqua;
+        }
     </style>
 
 </head>
 
 <body>
     <div class="main">
-        <div class="bg"><div class="blur"></div></div>
+        <div class="bg">
+            <div class="blur"></div>
+        </div>
         <div class="border"></div>
         <div class="box">
             <div class="content">
                 <h1>Suraj Arya</h1>
                 <p>I'm a Student of Diploma CSE 3rd Year</p>
-            </div>    
+            </div>
             <img src="img.jpg" alt="my Img">
         </div>
     </div>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: 1s;
+            border-radius: 10px;
+            border-bottom-left-radius: 0px;
+        }
+
+        div:hover {
+            /* width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            transform: rotate(180deg);
+            background-color: blue; */
+        }
+
+        .div2:hover {
+            transform-origin: left bottom;
+            transform: rotate(10deg);
+            background-color: rgb(255, 0, 0, 0.7);
+        }
+
+        .div3:hover {
+            transform-origin: left bottom;
+            transform: rotate(10deg);
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+
+        .div4:hover {
+            transform-origin: left bottom;
+            transform: rotate(10deg);
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="div2">
+            <div class="div3">
+                <div class="div4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

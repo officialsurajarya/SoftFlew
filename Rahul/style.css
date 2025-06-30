@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* section {
+    padding: 100px 4%;
+} */
+
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: yellow;
+    padding: 15px 4%;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    padding-left: 30px;
+    font-weight: bold;
+}

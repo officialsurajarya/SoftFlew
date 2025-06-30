@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blinking Moon</title>
+    <style>
+        body {
+            background-color: #000;
+            /* Night sky */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .moon {
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 30px 10px #fff;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+                box-shadow: 0 0 30px 10px #fff;
+            }
+
+            50% {
+                /* opacity: 0.2; */
+                box-shadow: 0 0 5px 2px rgba(355, 355, 355, 0.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="moon"></div>
+</body>
+
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blinking Moon with Gradient</title>
+    <style>
+        body {
+            background-color: #000;
+            /* Night sky */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .moon {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #fff, #fff, #fff);
+            animation: blink 2s infinite ease-in-out;
+            box-shadow: 0 0 40px 15px #fff;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+                box-shadow: 0 0 40px 15px #fff;
+            }
+
+            50% {
+                box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="moon"></div>
+</body>
+
+</html>
